@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Co-Viewer</title>
+</head>
+<body>
+    <h1>PDF Co-Viewer</h1>
+    <div id="active-users">Active Users: 0</div>
+    <div>
+        <input type="file" id="pdf-upload" accept="application/pdf">
+    </div>
+    <canvas id="pdf-render"></canvas>
+    <br>
+    <button id="prev-page">Previous Page</button>
+    <span>Page: <span id="page-num">1</span> of <span id="page-count">0</span></span>
+    <button id="next-page">Next Page</button>
+    <br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
